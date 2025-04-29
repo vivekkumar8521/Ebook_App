@@ -16,6 +16,13 @@ An online eBook store web application built using **JSP + Servlet + JDBC + MySQL
 - JDBC + MySQL integration
 
 ---
+🛠 Technology Stack:
+Layer | Technology
+Frontend | HTML, CSS, JSP
+Backend | Java Servlet
+Database | MySQL
+Connection | JDBC
+Server | Apache Tomcat 
 
 ## 📁 Project Folder Structure
 
@@ -74,6 +81,18 @@ CREATE TABLE books (
     description TEXT,
     image VARCHAR(255)
 );
+
+CREATE TABLE cart (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    book_id INT NOT NULL,
+    user_id INT NOT NULL,
+    quantity INT DEFAULT 1,
+    added_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
 
 CREATE TABLE orders (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -187,7 +206,7 @@ Shows selected book info with "Buy Now" option.
 
 ---
 
-## 📦 Optional: Admin Panel
+## 📦 Admin Panel
 
 - Admin can:
   - Add/Edit/Delete Books
@@ -203,12 +222,6 @@ Shows selected book info with "Buy Now" option.
 - HTML/CSS + Bootstrap (UI)
 - Apache Tomcat
 - MySQL
-
----
-
-## 🤝 Contribution
-
-Pull requests are welcome. Feel free to suggest improvements or features.
 
 ---
 
