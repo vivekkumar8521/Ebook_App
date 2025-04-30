@@ -100,26 +100,13 @@ CREATE TABLE orders (
     book_id INT,
     order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
 ```
 
 ### 3. Add JDBC Connector
 - Download MySQL JDBC Driver
 - Add the `.jar` to your project's `lib` folder or Build Path
-
-### 4. Create Model Classes
-
-#### Example: `Book.java`
-```java
-public class Book {
-    private int id;
-    private String title, author, category, image;
-    private double price;
-    private String description;
-    // Getters and Setters
-}
-```
-
----
 
 ## 💾 DAO & JDBC Setup
 
@@ -224,6 +211,77 @@ Shows selected book info with "Buy Now" option.
 - MySQL
 
 ---
+
+## Screenshot
+
+
+1 .Home Page
+![Screenshot (7)](https://github.com/user-attachments/assets/c6453eaf-9dad-4863-9145-58862ad9e033)
+
+
+
+2. Recent Book
+![Screenshot (8)](https://github.com/user-attachments/assets/f5dca248-34ea-4740-82ae-ae2a6c614abf)
+
+
+
+3.User Registration
+![Screenshot (9)](https://github.com/user-attachments/assets/b33ba8ad-1227-40e0-b2fc-187d9b49bf28)
+
+
+
+4.Login
+![Screenshot (10)](https://github.com/user-attachments/assets/5a8a99c0-af79-44f2-8109-ad8175780f33)
+
+
+
+5.Admin Login
+![Screenshot (11)](https://github.com/user-attachments/assets/8338632c-e087-44e6-a68f-d123cc35b872)
+
+
+
+6. Add Book
+![Screenshot (12)](https://github.com/user-attachments/assets/04663b0e-bb5e-421b-a6fc-79f5028d8e14)
+
+
+
+7.All Book // Edit & Delete
+![Screenshot (13)](https://github.com/user-attachments/assets/b1ae917c-af4a-4503-bff8-0558d781c673)
+
+
+
+8. User Ordered Data Handle/Seen By Admin 
+![Screenshot (14)](https://github.com/user-attachments/assets/38c41957-bb64-4d26-9640-d921a51da7c0)
+
+
+
+9.Admin Logout
+![Screenshot (15)](https://github.com/user-attachments/assets/999103e7-0b78-45d4-a091-3157cbd0f2b1)
+
+
+
+10.User Add To Cart
+![Screenshot (16)](https://github.com/user-attachments/assets/3b80c560-37fe-4576-b67a-e659cdab5b53)
+
+
+
+11. User Setting
+![Screenshot (17)](https://github.com/user-attachments/assets/1ae8c5f0-8ce8-4824-9442-310a510606a4)
+
+
+
+13. User Edit Profile
+![Screenshot (18)](https://github.com/user-attachments/assets/a7eb8d8f-1502-4a45-a3f1-54edd9f598f8)
+
+
+
+13.User Ordered By Book
+![Screenshot (19)](https://github.com/user-attachments/assets/87ae1200-1690-40c3-a712-4714979ff93f)
+
+
+
+
+
 
 ## 📄 License
 
